@@ -25,9 +25,19 @@ body {
     margin-bottom: 15px;
 }
 
-.logo {
-    width: 60px;
-    height: 60px;
+/* ตกแต่งโลโก้แบบข้อความ (Text Logo แทนรูปภาพ) */
+.text-logo {
+    width: 55px;
+    height: 55px;
+    background-color: #ff9900;
+    color: #003366;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 .navbar ul {
@@ -67,10 +77,17 @@ body {
     padding-bottom: 5px;
 }
 
+.banner-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
 /* Cards & Grid Systems */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
     margin-top: 20px;
 }
@@ -89,6 +106,23 @@ body {
     object-fit: cover;
     border-radius: 50%;
     margin-bottom: 15px;
+}
+
+.news-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.news-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.news-info {
+    padding: 15px;
 }
 
 /* Table Design */
