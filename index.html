@@ -7,32 +7,46 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- ================= ส่วนหัวแบบไม่ใช้รูปภาพโลโก้ ================= -->
-<header class="main-header">
-    <div class="logo-container">
-        <!-- ใช้กล่องข้อความอักษรย่อแทนรูปภาพ -->
-        <div class="text-logo">ETC</div> 
-        <div>
-            <h1>วิทยาลัยเทคโนโลยีตัวอย่าง</h1>
-            <p>Example Technological College</p>
+    <header class="main-header">
+        <div class="logo-container">
+            <div class="text-logo">ETC</div>
+            <div>
+                <h1>วิทยาลัยเทคโนโลยีตัวอย่าง</h1>
+                <p>Example Technological College</p>
+            </div>
         </div>
-    </div>
-    <nav class="navbar">
-        <!-- เมนูหลักตามปกติ -->
-    </nav>
-</header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html" class="active">หน้าหลัก</a></li>
+                <li><a href="executive.html">ข้อมูลผู้บริหาร</a></li>
+                <li><a href="staff.html">ข้อมูลบุคลากร</a></li>
+                <li><a href="student.html">ข้อมูลนักเรียน/นักศึกษา</a></li>
+                <li><a href="courses.html">สาขาวิชาที่เปิดสอน</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <main class="container">
-        <h2 class="page-title">ข่าวประชาสัมพันธ์</h2>
+        <section class="banner">
+            <img src="images/banner.jpg" alt="ป้ายประชาสัมพันธ์" class="banner-img">
+        </section>
+
+        <h2 class="page-title">ข่าวประชาสัมพันธ์ล่าสุด</h2>
         <div class="grid-container">
-            <div class="card" style="text-align:left;">
-                <h3>เปิดรับสมัครนักศึกษาใหม่ 2026</h3>
-                <p>เปิดรับสมัครระดับ ปวช. และ ปวส. ทุกสาขาวิชา ตั้งแต่วันนี้เป็นต้นไป</p>
-            </div>
-            <div class="card" style="text-align:left;">
-                <h3>การแข่งขันทักษะวิชาชีพ</h3>
-                <p>ขอเชิญร่วมส่งกำลังใจให้ตัวแทนนักศึกษาในการแข่งขันทักษะระดับชาติ</p>
-            </div>
+            <article class="news-card">
+                <img src="images/news1.jpg" alt="ข่าวเปิดรับสมัคร">
+                <div class="news-info">
+                    <h3>เปิดรับสมัครนักศึกษาใหม่ ประจำปีการศึกษา 2026</h3>
+                    <p>รายละเอียดการรับสมัครระดับ ปวช. และ ปวส. ทุกสาขาวิชา เปิดรับสมัครแล้ววันนี้</p>
+                </div>
+            </article>
+            <article class="news-card">
+                <img src="images/news2.jpg" alt="ข่าวการแข่งขันทักษะ">
+                <div class="news-info">
+                    <h3>การแข่งขันทักษะวิชาชีพประจำปี</h3>
+                    <p>ร่วมส่งกำลังใจให้นักเรียนนักศึกษาในการแข่งขันทักษะวิชาชีพระดับชาติ</p>
+                </div>
+            </article>
         </div>
     </main>
 
