@@ -7,20 +7,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- ================= ส่วนหัวแบบไม่ใช้รูปภาพโลโก้ ================= -->
-<header class="main-header">
-    <div class="logo-container">
-        <!-- ใช้กล่องข้อความอักษรย่อแทนรูปภาพ -->
-        <div class="text-logo">ETC</div> 
-        <div>
-            <h1>วิทยาลัยเทคโนโลยีตัวอย่าง</h1>
-            <p>Example Technological College</p>
+    <header class="main-header">
+        <div class="logo-container">
+            <div class="text-logo">ETC</div>
+            <div>
+                <h1>วิทยาลัยเทคโนโลยีตัวอย่าง</h1>
+                <p>Example Technological College</p>
+            </div>
         </div>
-    </div>
-    <nav class="navbar">
-        <!-- เมนูหลักตามปกติ -->
-    </nav>
-</header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">หน้าหลัก</a></li>
+                <li><a href="executive.html">ข้อมูลผู้บริหาร</a></li>
+                <li><a href="staff.html">ข้อมูลบุคลากร</a></li>
+                <li><a href="student.html">ข้อมูลนักเรียน/นักศึกษา</a></li>
+                <li><a href="courses.html" class="active">สาขาวิชาที่เปิดสอน</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <main class="container">
         <h2 class="page-title">หลักสูตรที่เปิดสอน</h2>
@@ -35,10 +39,16 @@
                 <p><strong>ระดับที่เปิดสอน:</strong> ปวช. และ ปวส.</p>
                 <p>เน้นทักษะการจัดการระบบการเงิน การบัญชีธุรกิจ และการใช้โปรแกรมบัญชีสำเร็จรูป</p>
             </div>
+            <div class="card" style="text-align:left;">
+                <h3>สาขาวิชาช่างไฟฟ้ากำลัง</h3>
+                <p><strong>ระดับที่เปิดสอน:</strong> ปวช. และ ปวส.</p>
+                <p>ศึกษาการติดตั้ง ควบคุม และบำรุงรักษาระบบไฟฟ้าในอาคารและโรงงานอุตสาหกรรม</p>
+            </div>
         </div>
     </main>
 
     <footer class="main-footer">
+        <p>123 ถนนวิทยะ อำเภอเมือง จังหวัดเชียงใหม่ | โทร. 053-123456</p>
         <p>&copy; 2026 วิทยาลัยเทคโนโลยีตัวอย่าง. All Rights Reserved.</p>
     </footer>
 </body>
