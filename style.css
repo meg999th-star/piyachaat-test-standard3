@@ -1,4 +1,3 @@
-/* การตั้งค่าพื้นฐาน */
 * {
     margin: 0;
     padding: 0;
@@ -12,9 +11,9 @@ body {
     line-height: 1.6;
 }
 
-/* Header & Navbar */
+/* Header & Navigation */
 .main-header {
-    background-color: #003366; /* สีน้ำเงินประจำสถานศึกษา */
+    background-color: #003366;
     color: #ffffff;
     padding: 15px 5%;
 }
@@ -48,7 +47,7 @@ body {
 }
 
 .navbar a:hover, .navbar a.active {
-    background-color: #ff9900; /* สีส้มเน้นปุ่ม */
+    background-color: #ff9900;
     color: #000;
 }
 
@@ -57,44 +56,63 @@ body {
     max-width: 1200px;
     margin: 20px auto;
     padding: 0 15px;
+    min-height: 70vh;
 }
 
-.banner-img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 30px;
-}
-
-.news-section h2 {
+.page-title {
     color: #003366;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     border-bottom: 3px solid #ff9900;
     display: inline-block;
+    padding-bottom: 5px;
 }
 
-.news-grid {
+/* Cards & Grid Systems */
+.grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
-.news-card {
+.card {
     background: white;
     border-radius: 8px;
-    overflow: hidden;
+    padding: 20px;
+    text-align: center;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.news-card img {
-    width: 100%;
-    height: 200px;
+.card img {
+    width: 150px;
+    height: 150px;
     object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
 }
 
-.news-info {
-    padding: 15px;
+/* Table Design */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.data-table th, .data-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.data-table th {
+    background-color: #003366;
+    color: white;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f9f9f9;
 }
 
 /* Footer */
@@ -103,12 +121,5 @@ body {
     color: #ccc;
     padding: 20px 5%;
     margin-top: 40px;
-}
-
-.footer-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
-    gap: 10px;
 }
